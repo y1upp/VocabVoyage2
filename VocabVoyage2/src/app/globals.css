@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: linear-gradient(to bottom, #fcd116, #007a33, #d01c28); /* Same background for dark mode */
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px; /* width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #FF6F61; /* thumb color */
+  border-radius: 8px; /* rounded edges */
+  border: 4px solid #FFD4D4; /* space around thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #F1F1F1; /* track color */
+  border-radius: 10px; /* rounded track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #D46B58; /* darken thumb color on hover */
+}
+
+.lessons-scrollbar::-webkit-scrollbar {
+  width: 12px; /* Keep the width */
+}
+
+.lessons-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #007C55; /* Green thumb */
+  border-radius: 8px; /* Rounded edges */
+  border: 4px solid #F0F8E1; /* Light green border */
+}
+
+.lessons-scrollbar::-webkit-scrollbar-track {
+  background: #F0F8E1; /* Light green track */
+  border-radius: 10px; /* Rounded track */
+}
+
+.lessons-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #005C40; /* Darker green on hover */
+}
+
+.lessons-scrollbar::-webkit-scrollbar-thumb {
+  height: 60px; /* Set a fixed shorter scrollbar size */
+}
+
+
+/* Custom Scrollbar for Home Page Content */
+.home-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.home-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #FBC02D; /* Yellow scrollbar */
+  border-radius: 6px;
+  border: 3px solid #FFEB3B; /* Light yellow border */
+}
+
+.home-scrollbar::-webkit-scrollbar-track {
+  background: #FFF9C4; /* Light yellow background */
+  border-radius: 6px;
+}
+
+.home-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #F57F17; /* Darker yellow on hover */
+}
